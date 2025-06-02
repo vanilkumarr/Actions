@@ -8,9 +8,9 @@ jobs:
       matrix:
         python-version: ["3.11","3.12"]
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up python ${{matrix.paython-version }}
-        uses: action/set-python@v5
+        uses: actions/set-python@v5
         with:
           python-version: ${{matrix.paython-version }}
       - name: Install dependencies
