@@ -3,5 +3,5 @@ def addition(a,b):
 
 def test():
   assert addition(1,5)==6
-  assert addition(1,2)==9
+  assert addition(1,8)==9
   
