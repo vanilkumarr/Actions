@@ -25,4 +25,4 @@ jobs:
       - name: Run test
         run: |
           cd app
-          python -m pytest addition.py
+          python -m pytest app.py
