@@ -8,7 +8,7 @@ jobs:
       matrix:
         python-version: ["3.11","3.12"]
     steps:
-      - uses: action/checkout@v4.1.4
+      - uses: action/checkout@v3
       - name: Set up python ${{matrix.paython-version }}
         uses: action/set-python@v5
         with:
