@@ -9,10 +9,10 @@ jobs:
         python-version: ["3.11","3.12"]
     steps:
       - uses: actions/checkout@v4
-      - name: Set up python ${{matrix.paython-version }}
+      - name: Set up python ${{matrix.python-version }}
         uses: actions/set-python@v5
         with:
-          python-version: ${{matrix.paython-version }}
+          python-version: ${{matrix.python-version }}
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
